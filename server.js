@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.DATABASE_URL, { 
+mongoose.connect('mongodb+srv://doadmin:W032Z4R957QCD6By@adityatawade-6d6d5c14.mongo.ondigitalocean.com/subscribers?authSource=admin&replicaSet=adityatawade&tls=true&tlsCAFile=./ca-certificate', { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
     tls: true,
